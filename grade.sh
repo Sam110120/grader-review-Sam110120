@@ -18,23 +18,6 @@ cp student-submission/ListExamples.java grading-area/
 cp TestListExamples.java grading-area/
 cd grading-area
 
-# javac -cp . ListExamples.java
-# if [ $? -ne 0 ]; then
-#     echo "Error: Compilation of ListExamples.java failed."
-#     exit 1
-# fi
-
-# javac -cp . your_grading_tests.java
-# if [ $? -ne 0 ]; then
-#     echo "Error: Compilation of grading tests failed."
-#     exit 1
-# fi
-
-# javac -cp $CPATH ListExamples.java TestListExamples.java || {
-# echo "Error"
-#     exit 1
-# }
-
 javac -cp $CPATH *.java
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples 
 
